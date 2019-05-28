@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="head">
+            <div class="col-1 float-left">
+                <img src="./IMAGES/logo-bird3.png" id="logo" alt="Logo design">
+            </div>
+            <div class="col-6">
+                <div id="company-name">International Exhibition Center</div>
+            </div>
+            <div class="col-5">
+                <div class="btn-group float-right" role="group" aria-label="Basic example">
+                    <a class="btn btn-link" href="./index.html" role="button">HOME</a>
+                    <a class="btn btn-link" href="./articles.html" role="button">ARTICLES</a>
+                    <a class="btn btn-link" href="./chat.html" role="button">CHAT</a>
+                    <a class="btn btn-link" href="./register.html" role="button">REGISTER</a>
+                    <a class="btn btn-link" href="./about_us.html" role="button">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Chat</li>
+            </ol>
+        </nav>
+
+        <h4>CHAT</h4>
+
+        <div class="row">
+            <div class="col-12 ">
+                <ul id="message-list" class="list-group list-group-flush border border-primary list-border">
+                </ul>
+                <br>
+                <label for="username-input">Username:</label>
+                <br>
+                <input type="text" id="username-input" value="" name="username">
+                <br>
+                <label for="message-input">Message:</label>
+                <br>
+                <input type="text" id="message">
+                <button id="add-task" class="btn btn-light">Send</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 footer"> Copyright © 2019 International Exhibition Center. All rights reserved.</div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
