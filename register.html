@@ -34,36 +34,104 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Login</li>
+                <li class="breadcrumb-item active" aria-current="page">Registration form</li>
             </ol>
         </nav>
+        <div class="row">
+            <div class="col-12">
+                <h4>REGISTER</h4>
+                <br>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="username-input"></label>
+                        <input type="text" id="username-input" placeholder="Username*" name="username-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Password*" name="password" minlength="8"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2"></label>
+                        <input type="password" id="password2" placeholder="Retype password*" name="password2"
+                            minlength="8" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="first_name"></label>
+                        <input type="text" id="first_name" placeholder="First name*" name="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name"></label>
+                        <input type="text" id="last_name" placeholder="Last name*" name="last_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country-input"></label>
+                        <select name="country" id="country-input" required>
+                            <option selected>Select country*</option>
+                            <option>Albania</option>
+                            <option>Andorra</option>
+                            <option>Austria</option>
+                            <option>Belarus</option>
+                            <option>Belgium</option>
+                            <option>Bosnia and Herzegovina</option>
+                            <option>Bulgaria</option>
+                            <option>Croatia</option>
+                            <option>Czech Republic</option>
+                            <option>Denmark</option>
+                            <option>Estonia</option>
+                            <option>Finland</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>Greece</option>
+                            <option>Hungary</option>
+                            <option>Iceland</option>
+                            <option>Ireland</option>
+                            <option>Italy</option>
+                            <option>Kosovo</option>
+                            <option>Latvia</option>
+                            <option>Liechtenstein</option>
+                            <option>Lithuania</option>
+                            <option>Luxembourg</option>
+                            <option>Malta</option>
+                            <option>Moldova</option>
+                            <option>Monaco</option>
+                            <option>Montenegro</option>
+                            <option>Netherlands</option>
+                            <option>North Macedonia</option>
+                            <option>Norway</option>
+                            <option>Poland</option>
+                            <option>Portugal</option>
+                            <option>Romania</option>
+                            <option>Russia</option>
+                            <option>San Marino</option>
+                            <option>Serbia</option>
+                            <option>Slovakia</option>
+                            <option>Slovenia</option>
+                            <option>Spain</option>
+                            <option>Sweden</option>
+                            <option>Switzerland</option>
+                            <option>Turkey</option>
+                            <option>Ukraine</option>
+                            <option>United Kingdom</option>
+                            <option>Vatican City</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="agree-input" required>
+                        <label for="agree-input">Agree with terms & conditions*</label>
+                    </div>
+                    <button type="submit" id="register" class="btn btn-light"
+                        onclick="validate_passwords()">Register</button>
+                </form>
+            </div>
+        </div>
 
-        <h3>REGISTER</h3>
-        <form action="" method="post">
-            <div>
-                <label for="username-input">Username:</label>
-                <input type="text" id="username-input" value="Foo" placeholder="Username" name="username">
-            </div>
-            <div>
-                <label for="password-input">Password:</label>
-                <input type="password" id="password-input" placeholder="Password" name="password">
-            </div>
-            <div>
-                <label for="password-input">Password:</label>
-                <input type="password" id="password-input" placeholder="Retype password" name="password">
-            </div>
-        </form>
         <div class="row">
             <div class="col-12 footer"> Copyright © 2019 International Exhibition Center. All rights reserved.</div>
         </div>
     </div>
 
-
-
-
-
-
-    <!-- <script src="main.js"></script> -->
+    <script src="./JS/register.js"></script>
 </body>
 
 </html>

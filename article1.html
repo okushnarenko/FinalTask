@@ -5,58 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Articles page | Article 1</title>
+    <title>Articles page | Riga Food 2019</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">LOGO</div>
-            <div class="col-5">EMPTY</div>
-            <div class="col-1">HOME</div>
-            <div class="col-1">ARTICLES</div>
-            <div class="col-1">CHAT</div>
-            <div class="col-1">REGISTER</div>
-            <div class="col-1">ABOUT US</div>
+        <div class="row" id="head">
+            <div class="col-1 float-left">
+                <img src="./IMAGES/logo-bird3.png" id="logo" alt="Logo design">
+            </div>
+            <div class="col-6">
+                <div id="company-name">International Exhibition Center</div>
+            </div>
+            <div class="col-5">
+                <div class="btn-group float-right" role="group" aria-label="Basic example">
+                    <a class="btn btn-link" href="./index.html" role="button">HOME</a>
+                    <a class="btn btn-link" href="./articles.html" role="button">ARTICLES</a>
+                    <a class="btn btn-link" href="./chat.html" role="button">CHAT</a>
+                    <a class="btn btn-link" href="./register.html" role="button">REGISTER</a>
+                    <a class="btn btn-link" href="./about_us.html" role="button">ABOUT US</a>
+                </div>
+            </div>
         </div>
-
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="./articles.html">Articles</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Article 1</li>
-            </ol>
-        </nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./articles.html">Articles</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Riga Food 2019</li>
+                </ol>
+            </nav>
 
-        <h3>Article 1</h3>
+        <h3>Riga Food – Major Baltic Food Industry Event!</h3>
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-3">Photo1
+                    <div class="col-3">
+                        <a data-fancybox="gallery" href="./IMAGES/rf_1.jpg"><img style="width: 350px"
+                                src="./IMAGES/rf_1.jpg"></a>
                         <div class="row">
-                            <div class="col-4">Photo2/1</div>
-                            <div class="col-4">Photo2/2</div>
-                            <div class="col-4">Photo2/3</div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/rf_2.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_2.jpg"></a></div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/rf_3.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_3.jpg"></a></div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/rf_4.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_4.jpg"></a></div>
                         </div>
+                        <br>
                         <div class="row">
-                            <div class="col-4">Photo3/1</div>
-                            <div class="col-4">Photo3/2</div>
-                            <div class="col-4">Photo3/3</div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/rf_5.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_5.jpg"></a></div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/rf_6.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_6.jpg"></a></div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/rf_7.jpg"><img
+                                        style="width: 110px" src="./IMAGES/rf_7.jpg"></a></div>
                         </div>
                     </div>
-                    <div class="col-9">ARTICLE 1</div>
+                    <div class="col-9">
+                        <p>04.09.–07.09.2019.</p>
+                        <p>The biggest in the Baltics food industry fair “Riga Food” yearly outlines the trends of the food
+                        industry development, highlights novelties and presents a number of serious and trustable
+                        enterprises. Everybody is welcome to Kipsala International Exhibition Centre to draw inspiration
+                        from diversity of menu ideas, to taste new products, to watch and enjoy professional chef,
+                        pastry cook and bartender competitions. Moreover, we invite professionals to “Riga Food” to
+                        derive ideas, knowledge and information allowing further professional and business development.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12">Copyright © 2019 AS DELFI. All rights reserved.</div>
+            <div class="col-12 footer"> Copyright © 2019 International Exhibition Center. All rights reserved.</div>
         </div>
+    </div>
 
-        <!-- <script src="main.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </body>
 
 </html>

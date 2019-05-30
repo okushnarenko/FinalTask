@@ -60,6 +60,8 @@
     left: 10px;
     border: 3px solid grey;
     overflow: scroll;
-    
 }
 
+.center {
+    text-align: center;
+}

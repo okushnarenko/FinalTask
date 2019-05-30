@@ -5,58 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Articles page | Article 3</title>
+    <title>Articles page | ZOOEXPO 2019</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-2">LOGO</div>
-            <div class="col-5">EMPTY</div>
-            <div class="col-1">HOME</div>
-            <div class="col-1">ARTICLES</div>
-            <div class="col-1">CHAT</div>
-            <div class="col-1">REGISTER</div>
-            <div class="col-1">ABOUT US</div>
+        <div class="row" id="head">
+            <div class="col-1 float-left">
+                <img src="./IMAGES/logo-bird3.png" id="logo" alt="Logo design">
+            </div>
+            <div class="col-6">
+                <div id="company-name">International Exhibition Center</div>
+            </div>
+            <div class="col-5">
+                <div class="btn-group float-right" role="group" aria-label="Basic example">
+                    <a class="btn btn-link" href="./index.html" role="button">HOME</a>
+                    <a class="btn btn-link" href="./articles.html" role="button">ARTICLES</a>
+                    <a class="btn btn-link" href="./chat.html" role="button">CHAT</a>
+                    <a class="btn btn-link" href="./register.html" role="button">REGISTER</a>
+                    <a class="btn btn-link" href="./about_us.html" role="button">ABOUT US</a>
+                </div>
+            </div>
         </div>
 
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="./articles.html">Articles</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Article 3</li>
+                <li class="breadcrumb-item active" aria-current="page">ZOOEXPO 2019</li>
             </ol>
         </nav>
 
-        <h3>Article 3</h3>
+        <h3>ZOOEXPO 2019!</h3>
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-3">Photo1
+                    <div class="col-3">
+                        <a data-fancybox="gallery" href="./IMAGES/ze_1.jpeg"><img style="width: 350px"
+                                src="./IMAGES/ze_1.jpeg"></a>
                         <div class="row">
-                            <div class="col-4">Photo2/1</div>
-                            <div class="col-4">Photo2/2</div>
-                            <div class="col-4">Photo2/3</div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/ze_2.jpg"><img
+                                        style="width: 110px" src="./IMAGES/ze_2.jpg"></a></div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/ze_3.jpg"><img
+                                        style="width: 110px" src="./IMAGES/ze_3.jpg"></a></div>
+                            <div class="col-4"><br><a data-fancybox="gallery" href="./IMAGES/ze_4.jpeg"><img
+                                        style="width: 110px" src="./IMAGES/ze_4.jpeg"></a></div>
                         </div>
+                        <br>
                         <div class="row">
-                            <div class="col-4">Photo3/1</div>
-                            <div class="col-4">Photo3/2</div>
-                            <div class="col-4">Photo3/3</div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/ze_5.jpg"><img
+                                        style="width: 110px" src="./IMAGES/ze_5.jpg"></a></div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/ze_6.jpg"><img
+                                        style="width: 110px" src="./IMAGES/ze_6.jpg"></a></div>
+                            <div class="col-4"><a data-fancybox="gallery" href="./IMAGES/ze_7.jpeg"><img
+                                        style="width: 110px" src="./IMAGES/ze_7.jpeg"></a></div>
                         </div>
                     </div>
-                    <div class="col-9">ARTICLE 3</div>
+                    <div class="col-9">
+                        <p>26.10.–27.10.2019.</p>
+                        <p>International professional dog and cat shows, vast exposition of different pets and exotic
+                            animals, an exciting entertainment programme and a wide choice of pet industry goods and
+                            services – all this can be seen at the International Pet Industry Fair ZooExpo 2019 on 26-27
+                            October in Kipsala.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12">Copyright © 2019 AS DELFI. All rights reserved.</div>
+            <div class="col-12 footer"> Copyright © 2019 International Exhibition Center. All rights reserved.</div>
         </div>
 
-        <!-- <script src="main.js"></script> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </body>
 
 </html>
